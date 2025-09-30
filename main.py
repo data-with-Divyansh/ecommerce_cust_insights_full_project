@@ -6,9 +6,9 @@ from pyspark.sql.window import *
 from pyspark.sql.types import *
 import sys
 
-os.environ['PYSPARK_PYTHON'] = r"C:\Users\PCNAME\AppData\Local\Programs\Python\Python310\python.exe"
-os.environ['HADOOP_HOME'] = r'C:\hadoop'
-os.environ['JAVA_HOME'] = r'C:\Program Files\Java\jdk1.8.0_202'
+# os.environ['PYSPARK_PYTHON'] = r"C:\Users\PCNAME\AppData\Local\Programs\Python\Python310\python.exe"
+# os.environ['HADOOP_HOME'] = r'C:\hadoop'
+# os.environ['JAVA_HOME'] = r'C:\Program Files\Java\jdk1.8.0_202'
 
 conf = SparkConf().setAppName("pyspark").setMaster("local[*]").set("spark.driver.host","localhost").set("spark.default.parallelism", "1")
 sc = SparkContext(conf=conf)
