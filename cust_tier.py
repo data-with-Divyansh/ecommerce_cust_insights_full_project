@@ -4,9 +4,8 @@ from pyspark.sql import SparkSession, Row
 from pyspark.sql.functions import *
 from pyspark.sql.window import *
 from pyspark.sql.types import *
-import sys
 
-# os.environ['PYSPARK_PYTHON'] = r'C:\Users\PCNAME\AppData\Local\Programs\Python\Python310\python.exe'
+os.environ['PYSPARK_PYTHON'] = r'C:\Users\PCNAME\AppData\Local\Programs\Python\Python310\python.exe'
 # os.environ['HADOOP_HOME'] = r'C:\hadoop'
 # os.environ['JAVA_HOME'] = r'C:\Program Files\Java\jdk1.8.0_202'
 
@@ -18,7 +17,6 @@ spark = SparkSession.builder.getOrCreate()
 
 print("================= PYSPARK Started =====================")
 print()
-
 
 orders_df = spark.read.csv("orders_large.csv", header="true").orderBy("customer_id").withColumn("currency",lit("USD"))
 orders_df.show()
@@ -48,10 +46,11 @@ joindf2.show()
 
 tier_final_df = (joindf2.withColumn("tier",expr("case when total_spend > 2000 then 'Gold' when total_spend > 1000 then 'Silver' else 'Bronze' end"))
                  .drop("currency","order_status","subscription_status","cust_id")
+                 .orderBy("customer_id",ascending=True)
                  )
 tier_final_df.show()
 
-tier_final_df.coalesce(1).write.format("parquet").mode("append").save("Output/tier_data2")
+tier_final_df.coalesce(1).write.mode("overwrite").csv("Output/tier_data",header=True)
 
 
 
