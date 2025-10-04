@@ -1,10 +1,10 @@
 ## Project Name: Customer, product subscription and product insights
 
 ### Task 1 - Project information: This project is about performing the following tasks:
-1. Tiering customers has spent a particular amount:
-    A. If a customer has spent more than 2000 then mark it as Gold tier
-    B. If a customer has spent more than 1000 then mark it as Silver tier
-    C. If less than 1000 then mark as Bronze.
+1. Tiering customers has spent a particular amount:<br>
+    A. If a customer has spent more than 2000 then mark it as Gold tier<br>
+    B. If a customer has spent more than 1000 then mark it as Silver tier<br>
+    C. If less than 1000 then mark as Bronze.<br>
 2. Find out all the necessary product information and join it into a single table/dataframe.
 
 Python script name for task 1 - cust_tier.py
