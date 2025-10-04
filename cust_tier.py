@@ -50,7 +50,7 @@ tier_final_df = (joindf2.withColumn("tier",expr("case when total_spend > 2000 th
                  )
 tier_final_df.show()
 
-tier_final_df.coalesce(1).write.mode("overwrite").csv("Output/tier_data",header=True)
+tier_final_df.coalesce(1).write.mode("overwrite").partitionBy("tier").csv("Output/tier_data",header=True)
 
 
 
