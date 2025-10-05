@@ -107,10 +107,10 @@ abandoned_carts_df = (event_count_df.filter(col("event_count").isin([2,3]))
                 )
 abandoned_carts_df.show()
 
-clickstream_join_df = page_view_df.join(abandoned_carts_df,"product_id","full")
+clickstream_join_df = page_view_df.join(abandoned_carts_df,"product_id","full") # join page_view and abandoned carts data
 # clickstream_join_df.show()
 
-final_join_df = orders_join_df.join(clickstream_join_df,"product_id","full")
+final_join_df = orders_join_df.join(clickstream_join_df,"product_id","full") # Join the final dataframe with master data for complete product insights
 final_join_df.show(50)
 
 final_join_df.coalesce(1).write.csv("Output/product_performance", header=True)
