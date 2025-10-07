@@ -8,7 +8,7 @@ from pyspark import StorageLevel
 import time
 
 
-os.environ['PYSPARK_PYTHON'] = r'C:\Users\Quantumn\AppData\Local\Programs\Python\Python310\python.exe'
+os.environ['PYSPARK_PYTHON'] = r'C:\Users\Pcname\AppData\Local\Programs\Python\Python310\python.exe'
 # os.environ['HADOOP_HOME'] = r'C:\hadoop'
 # os.environ['JAVA_HOME'] = r'C:\Program Files\Java\jdk1.8.0_202'
 
