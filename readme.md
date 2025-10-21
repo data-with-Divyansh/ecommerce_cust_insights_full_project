@@ -1,3 +1,14 @@
+##🛒 E-Commerce Customer Insights
+###📊 Project Overview
+
+ecommerce_customer_insights is a data analytics project that uncovers customer behavior patterns from e-commerce transactions.
+The goal is to: <br>
+Segment customers into tiers — Gold, Silver, and Bronze — based on their total spending.<br>
+Analyze churn for subscription-based customers.<br>
+Provide actionable insights to improve retention and marketing strategies.<br>
+
+This project demonstrates skills in data engineering, analytics, and visualization using modern tools such as Python, Spark, and Kafka (optional if you used them).
+
 ## Project Name: Customer, product subscription and product insights
 
 ### Task 1 (Python script: cust_tier.py) - Task information: This project is about performing the following tasks:
