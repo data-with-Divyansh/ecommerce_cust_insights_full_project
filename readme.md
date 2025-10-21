@@ -9,7 +9,21 @@ Provide actionable insights to improve retention and marketing strategies.<br>
 
 This project demonstrates skills in data engineering, analytics, and visualization using modern tools such as Python, Spark, and Kafka (optional if you used them).
 
-## Project Name: Customer, product subscription and product insights
+### 🚀 Key Features: <br>
+
+📂 Data Ingestion: Reads raw e-commerce customer data from JSON/CSV files or APIs.<br>
+🧹 Data Cleaning & Transformation: Handles missing values, data type conversions, and feature engineering.<br>
+💎 Customer Segmentation: Classifies customers into Gold, Silver, Bronze tiers based on spending quantiles.<br>
+🔁 Churn Analysis: Detects inactive or unsubscribed customers using date-based logic and behavioral patterns.<br>
+📈 Insight Generation: Aggregates KPIs such as:<br>
+Total spend per segment<br>
+Average order value<br>
+Churn rate<br>
+Monthly active users<br>
+🗂️ Visualization: (optional) Generates interactive dashboards or reports using Power BI, Matplotlib, or Spark SQL.<br>
+
+
+## Project Name: ecommerce_customer_insights
 
 ### Task 1 (Python script: cust_tier.py) - Task information: This project is about performing the following tasks:
 1. Tiering customers has spent a particular amount:<br>
