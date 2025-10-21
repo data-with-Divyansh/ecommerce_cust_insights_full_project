@@ -7,7 +7,7 @@ Segment customers into tiers — Gold, Silver, and Bronze — based on their tot
 Analyze churn for subscription-based customers.<br>
 Provide actionable insights to improve retention and marketing strategies.<br>
 
-This project demonstrates skills in data engineering, analytics, and visualization using modern tools such as Python, Spark, and Kafka (optional if you used them).
+This project demonstrates skills in data engineering, analytics, and visualization using modern tools such as Python, pyspark dataframes.
 
 ### 🚀 Key Features: <br>
 
@@ -20,8 +20,7 @@ Total spend per segment<br>
 Average order value<br>
 Churn rate<br>
 Monthly active users<br>
-🗂️ Visualization: (optional) Generates interactive dashboards or reports using Power BI, Matplotlib, or Spark SQL.<br>
-
+Product performance<br>
 
 ## Project Name: ecommerce_customer_insights
 
