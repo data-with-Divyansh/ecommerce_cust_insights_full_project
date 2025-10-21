@@ -1,5 +1,5 @@
-##🛒 E-Commerce Customer Insights
-###📊 Project Overview
+## 🛒 E-Commerce Customer Insights<br>
+### 📊 Project Overview
 
 ecommerce_customer_insights is a data analytics project that uncovers customer behavior patterns from e-commerce transactions.
 The goal is to: <br>
